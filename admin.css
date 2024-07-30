@@ -1,0 +1,51 @@
+/* admin.css */
+.navbar {
+  background-color: black;
+  color: red;
+}
+body {
+  background-image: url("background1.jpg");
+  background-size: cover; /* Adjust the size of the image to cover the container */
+  background-position: center center; /* Adjust the position of the image within the container */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+
+#studentControls,
+#addStudent {
+  margin-bottom: 20px;
+}
+
+#studentSelector {
+  margin-bottom: 10px;
+}
+
+select {
+  width: 300px;
+  height: 150px;
+}
+
+#controls,
+#addStudent {
+  text-align: center;
+}
+
+input,
+button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}

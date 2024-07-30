@@ -1,0 +1,91 @@
+.navbar {
+  background-color: black;
+  color: red;
+}
+body {
+  background-image: url("background1.jpg");
+  background-size: cover; /* Adjust the size of the image to cover the container */
+  background-position: center center; /* Adjust the position of the image within the container */
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 15px; /* Adjust padding for inner content */
+  margin: 0 auto; /* Center align the container */
+  text-align: center;
+}
+.stopwatch-heading {
+  color: #f0f0f0; /* Change to your desired font color */
+  font-size: 4rem;
+  font-weight: bold;
+  opacity: 0.43;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; /* Outline */
+}
+
+.stopwatch {
+  font-size: 3rem;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  opacity: 0.43;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+/* Styles for Start button */
+
+#startBtn {
+  background-color: transparent; /* Make background transparent */
+  background-image: url("buttonbackground2.jfif"); /* Replace with your image path */
+  background-size: cover; /* Ensure the image covers the button */
+  font-size: 2rem;
+  border-color: black;
+  color: #f0f0f0; /* Change to your desired font color */
+  font-weight: bold;
+  opacity: 0.57;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; /* Outline */
+}
+
+/* Styles for Stop button */
+#stopBtn {
+  background-color: transparent; /* Make background transparent */
+  background-image: url("buttonbackground1.jfif"); /* Replace with your image path */
+  background-size: cover; /* Ensure the image covers the button */
+  font-size: 2rem;
+  border-color: black;
+  color: #f0f0f0; /* Change to your desired font color */
+  font-weight: bold;
+  opacity: 0.57;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; /* Outline */
+}
+
+/* Styles for Reset button */
+#resetBtn {
+  background-color: transparent; /* Make background transparent */
+  background-image: url("buttonbackground2.jfif"); /* Replace with your image path */
+  background-size: cover; /* Ensure the image covers the button */
+  transform: scaleX(-1); /* Flip 180 degrees horizontally */
+  font-size: 2rem;
+  border-color: black;
+  color: #f0f0f0; /* Change to your desired font color */
+  font-weight: bold;
+  opacity: 0.57;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; /* Outline */
+}
+
+#resetBtn span {
+  display: inline-block; /* Ensure text is treated as a block element */
+  transform: scaleX(-1); /* Flip text 180 degrees horizontally */
+}

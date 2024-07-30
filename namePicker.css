@@ -1,0 +1,68 @@
+.navbar {
+  background-color: black;
+  color: red;
+}
+
+body {
+  background-image: url("background1.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0; /* Remove align-items to allow navbar to stick to the top */
+  display: flex;
+  flex-direction: column; /* Ensure body is a column layout */
+}
+
+.container {
+  max-width: 100%;
+  padding: 20px 15px; /* Adjusted padding for inner content */
+  margin: 80px auto 0; /* Top margin adjusted to create space below navbar */
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 3.5rem;
+  font-weight: bold;
+  border: 1px solid black;
+  background-color: #f0f0f0;
+  opacity: 0.43;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center align horizontally */
+  margin-top: 20px; /* Adjust as needed */
+}
+
+button {
+  background-color: transparent; /* Make background transparent */
+  background-image: url("buttonbackground1.jfif"); /* Replace with your image path */
+  background-size: cover; /* Ensure the image covers the button */
+  font-size: 1.5rem !important;
+  border-color: black;
+  color: #f0f0f0; /* Change to your desired font color */
+  font-weight: bold;
+  opacity: 0.57;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; /* Outline */
+  padding: 30px 60px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#eventDisplay {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 2rem;
+}
+h1 {
+  font-size: 4rem; /* Adjust font size */
+  color: red; /* Adjust font color */
+  text-shadow: 2px 2px black; /* Add text shadow */
+  font-weight: bold; /* Adjust font weight */
+  margin-bottom: 20px; /* Adjust margin */
+  text-align: center; /* Center align the text */
+}

@@ -1,0 +1,118 @@
+/* General Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  background-color: black;
+  color: red;
+  padding: 10px;
+  text-align: center; /* Center text in navbar */
+  position: fixed; /* Keep it at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure it spans the full width */
+  z-index: 1; /* Keep it above other content */
+}
+
+/* Body and HTML */
+body,
+html {
+  background-image: url("background1.jpg");
+  background-size: cover; /* Adjust the size of the image to cover the container */
+  background-position: center center; /* Adjust the position of the image within the container */
+  width: 100vw;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center content horizontally */
+  overflow: auto; /* Allow scrolling if needed */
+}
+
+/* Container for centering content */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+  max-width: 1200px; /* Optional: set max width for better layout control */
+  margin-top: 60px; /* Offset for the fixed navbar height */
+}
+
+/* Headings */
+h1,
+h2 {
+  color: aliceblue;
+  margin-bottom: 20px; /* Add some space below headings */
+}
+
+/* Leaderboards */
+#leaderboards {
+  margin-top: 20px;
+  text-align: center; /* Ensure text is centered */
+}
+
+/* Hide leaderboards by default */
+.leaderboard {
+  display: none;
+}
+
+/* Students and Entries */
+#dailyStudents p,
+#weeklyStudents p,
+#overallStudents p,
+#weeklyEntriesDisplay p {
+  margin: 5px 0;
+  font-size: 18px;
+  color: aliceblue;
+}
+
+/* Button Styles */
+button {
+  background-color: transparent; /* Make background transparent */
+  background-image: url("buttonbackground1.jfif"); /* Replace with your image path */
+  background-size: cover; /* Ensure the image covers the button */
+  font-size: 1rem !important;
+  border: 2px solid black;
+  color: #f0f0f0; /* Change to your desired font color */
+  font-weight: bold;
+  opacity: 0.7;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; /* Outline */
+  padding: 20px 30px;
+  margin: 10px; /* Add some space between buttons */
+  cursor: pointer;
+}
+
+/* Alternating Background Colors for Students */
+#dailyStudents p:nth-child(even),
+#weeklyStudents p:nth-child(even),
+#overallStudents p:nth-child(even),
+#weeklyEntriesDisplay p:nth-child(even) {
+  background-color: #cd0203;
+}
+
+#dailyStudents p:nth-child(odd),
+#weeklyStudents p:nth-child(odd),
+#overallStudents p:nth-child(odd),
+#weeklyEntriesDisplay p:nth-child(odd) {
+  background-color: black;
+}
+
+#dailyStudents p,
+#weeklyStudents p,
+#overallStudents p,
+#weeklyEntriesDisplay p {
+  padding: 10px; /* Add padding to student entries */
+  border-radius: 5px; /* Add some border radius */
+}
+#weeklyEntriesDisplay h3 {
+  color: red; /* Change to the color you prefer */
+  margin-top: 10px; /* Optional: Add some space above the date */
+  margin-bottom: 5px; /* Optional: Add some space below the date */
+}

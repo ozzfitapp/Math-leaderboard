@@ -1,0 +1,76 @@
+.navbar {
+  background-color: black;
+  color: red;
+  position: fixed;
+}
+body {
+  background-image: url("background1.jpg");
+  opacity: 0.55;
+  background-size: cover; /* Adjust the size of the image to cover the container */
+  background-position: center center; /* Adjust the position of the image within the container */
+  width: 100vw;
+  height: 100vh;
+}
+.timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(87vh - 80px); /* Adjust for navbar height */
+  margin-top: 10px; /* Offset to account for navbar */
+}
+
+.timer {
+  width: 80vmin; /* Use vmin for proportional sizing based on viewport */
+  height: 80vmin;
+  position: relative; /* Ensure relative positioning for absolute children */
+}
+
+.progress-ring {
+  width: 100%;
+  height: 100%;
+}
+
+.background-ring {
+  fill: whitesmoke; /* Grey background color */
+  stroke: none; /* No stroke for background */
+}
+
+.ring {
+  fill: none;
+  stroke-width: 7;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.3s;
+}
+
+.controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.controls input {
+  width: 25%;
+  padding: 5px;
+  margin: 0 5px;
+  font-size: 1.5rem;
+  border-color: black;
+  color: #f0f0f0; /* Change to your desired font color */
+  font-weight: bold;
+  opacity: 0.57;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; /* Outline */
+}
+
+.controls button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  background-color: transparent; /* Make background transparent */
+  background-image: url("buttonbackground2.jfif"); /* Replace with your image path */
+  background-size: cover; /* Ensure the image covers the button */
+  font-size: 1.5rem;
+  border-color: black;
+  color: #f0f0f0; /* Change to your desired font color */
+  font-weight: bold;
+  opacity: 0.9;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; /* Outline */
+}

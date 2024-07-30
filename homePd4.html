@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Homepage with LeaderBoard for Ms.Taylor's World of Math. Allows students to get points for answering questions right increasing their ranking on the leaderboard"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ms Taylor's World of Math Leader Board HomePage</title>
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="home.css" />
+
+    <!--Bootstrap script-->
+    <!--CSS bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <!-- jQuery Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown active">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              LeaderBoard
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="homePd1.html">Pd. 1 LeaderBoard</a>
+              <a class="dropdown-item" href="homePd2.html">Pd. 2 LeaderBoard</a>
+              <a class="dropdown-item" href="homePd3.html">Pd. 3 LeaderBoard</a>
+              <a class="dropdown-item" href="homePd4.html">Pd. 4 LeaderBoard</a>
+              <a class="dropdown-item" href="homePd6.html">Pd. 6 LeaderBoard</a>
+              <a class="dropdown-item" href="homePd8.html">Pd. 8 LeaderBoard</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="namePicker.html">Name Picker</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Name Picker
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="namePickerPeriod1.html"
+                >Pd. 1 Name Picker</a
+              >
+              <a class="dropdown-item" href="namePickerPeriod2.html"
+                >Pd. 2 Name Picker</a
+              >
+              <a class="dropdown-item" href="namePickerPeiod3.html"
+                >Pd. 3 Name Picker</a
+              >
+              <a class="dropdown-item" href="namePickerPeriod4.html"
+                >Pd. 4 Name Picker</a
+              >
+              <a class="dropdown-item" href="namePickerPeriod6.html"
+                >Pd. 6 Name Picker</a
+              >
+              <a class="dropdown-item" href="namePickerPeriod8.html"
+                >Pd. 8 Name Picker</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="randomEvent.html">Random Event</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="timer.html">Timer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="stopWatch.html">Stop Watch</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Admin
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="adminPd1.html">Pd. 1 Admin</a>
+              <a class="dropdown-item" href="adminPd2.html">Pd. 2 Admin</a>
+              <a class="dropdown-item" href="adminPd3.html">Pd. 3 Admin</a>
+              <a class="dropdown-item" href="adminPd4.html">Pd. 4 Admin</a>
+              <a class="dropdown-item" href="adminPd6.html">Pd. 6 Admin</a>
+              <a class="dropdown-item" href="adminPd8.html">Pd. 8 Admin</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Period 4 Leaderboard</h1>
+      <div>
+        <button onclick="showLeaderboard('daily')">Daily</button>
+        <button onclick="showLeaderboard('weekly')">Weekly</button>
+        <button onclick="showLeaderboard('overall')">Overall</button>
+        <button onclick="toggleWeeklyEntries()">Weekly Entries</button>
+      </div>
+      <div id="dailyLeaderboard" style="display: none">
+        <h2>Daily Leaderboard</h2>
+        <div id="dailyStudents"></div>
+      </div>
+      <div id="weeklyLeaderboard" style="display: none">
+        <h2>Weekly Leaderboard</h2>
+        <div id="weeklyStudents"></div>
+      </div>
+      <div id="overallLeaderboard" style="display: block">
+        <h2>Overall Leaderboard</h2>
+        <div id="overallStudents"></div>
+      </div>
+      <div id="weeklyEntriesContainer" style="display: none">
+        <h2>Weekly Entries</h2>
+        <div id="weeklyEntriesDisplay"></div>
+      </div>
+    </div>
+    <script src="homePd4.js"></script>
+  </body>
+</html>
